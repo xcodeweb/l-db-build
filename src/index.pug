@@ -1,0 +1,16 @@
+extends dev-pug/head
+
+prepend vars
+  - title = "DB"
+
+append vars
+
+append styles
+  link(rel="stylesheet" href="css/fonts.min.css")
+
+block content
+  include dev-pug/sections/header
+
+  include dev-pug/pages/main
+
+  include dev-pug/sections/footer
