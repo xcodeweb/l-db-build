@@ -1,0 +1,22 @@
+.nav {
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  &__item {
+    transition: opacity 0.3s ease;
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+
+  .text {
+    font-weight: 500;
+    color: $c-default;
+  }
+}

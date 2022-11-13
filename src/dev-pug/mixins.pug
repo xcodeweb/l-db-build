@@ -1,1 +1,3 @@
-include components/svg
+mixin svg(name)
+  svg&attributes(attributes)
+    use(xlink:href=`${baseDir}img/sprite/sprite.svg#${name}`)

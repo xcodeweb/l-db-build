@@ -1,3 +1,17 @@
+- var bemClass = "header__nav"
+
 header.header
-  .container
-    
+  .header__container.container
+    .header__top
+      .header__logo
+        include ../components/logo
+      .header__nav 
+        include ../components/nav
+    .header__content
+      h1.header__title.title
+        | We build your dream house well and professionally
+      p.header__text.text
+        | Our team can build a house according to your wishes. Any design and concept, we will help make it happen
+      button.header__button.button Contact us
+    .header__image
+      img.header__img(src="@img/header/bg.jpg" alt="bg image")

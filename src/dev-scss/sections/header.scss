@@ -1,3 +1,55 @@
 .header {
+  position: relative;
   background: linear-gradient(26.47deg, #023957 22.58%, #056088 94.16%);
+
+  &__container {
+    padding-top: 30px;
+    padding-bottom: 200px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  &__nav {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__title {
+    max-width: 740px;
+    margin-bottom: 16px;
+    color: $c-default;
+  }
+
+  &__text {
+    max-width: 445px;
+    margin-bottom: 32px;
+    font-weight: 500;
+    line-height: 170%;
+    color: $c-default;
+  }
+
+  &__button {
+  }
+
+  &__image {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 982px;
+
+    & img {
+      min-width: 100%;
+    }
+  }
 }
