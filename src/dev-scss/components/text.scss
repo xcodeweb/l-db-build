@@ -1,11 +1,16 @@
 .text {
-  font-family: "Poppins";
   font-weight: 400;
   font-size: 16px;
 }
 
 .title {
-  font-family: "Poppins";
   font-weight: 700;
   font-size: 52px;
+}
+
+h2.title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 170%;
+  color: #056088;
 }

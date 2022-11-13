@@ -1,17 +1,22 @@
 .header {
-  position: relative;
+  margin-bottom: 65px;
   background: linear-gradient(26.47deg, #023957 22.58%, #056088 94.16%);
 
   &__container {
+    position: relative;
     padding-top: 30px;
-    padding-bottom: 200px;
+    padding-bottom: 170px;
   }
 
   &__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 85px;
+  }
+
+  &__logo {
+    margin-left: 15px;
   }
 
   &__nav {
@@ -22,6 +27,7 @@
   &__content {
     position: relative;
     z-index: 2;
+    margin-left: 36px;
   }
 
   &__title {
@@ -38,15 +44,12 @@
     color: $c-default;
   }
 
-  &__button {
-  }
-
   &__image {
     position: absolute;
     z-index: 1;
-    top: 0;
-    right: 0;
-    width: 982px;
+    top: 2px;
+    right: -55px;
+    width: 930px;
 
     & img {
       min-width: 100%;
