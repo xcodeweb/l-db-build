@@ -1,4 +1,4 @@
-@media (max-width:1388px) {
+@media (max-width: 1388px) {
   // Benefits
   .benefits {
     &__inner {
@@ -39,4 +39,38 @@
     }
   }
   // End About
+}
+
+@media (max-width: 760px) {
+  // Reviews
+  .reviews {
+    &__inner {
+      flex-direction: column-reverse;
+    }
+
+    &__about-home {
+      padding-top: 165px;
+    }
+
+    &__review-content {
+      bottom: -150px;
+      max-width: 315px;
+      background-image: linear-gradient(
+        1.17deg,
+        rgba(2, 57, 87, 0.6) -19.65%,
+        rgba(5, 96, 136, 0.6) 93.67%
+      );
+    }
+  }
+  // End Reviews
+}
+
+@media (max-width: 360px) {
+  // Reviews
+  .reviews {
+    padding-top: 55px;
+    &__review-content {
+      bottom: -170px;
+    }
+  }
 }
