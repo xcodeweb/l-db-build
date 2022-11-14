@@ -14,3 +14,10 @@ h2.title {
   line-height: 170%;
   color: #056088;
 }
+
+[class*="__desc "] {
+  max-width: 348px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  text-align: center;
+}

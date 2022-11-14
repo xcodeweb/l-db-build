@@ -1,5 +1,30 @@
 @import "../dev-scss/vars";
 @import "../dev-scss/base";
-@import "../dev-scss/elements";
+
+//elements
+@import "../dev-scss/components/text";
+@import "../dev-scss/components/nav";
+@import "../dev-scss/components/logo";
+@import "../dev-scss/components/buttons";
+
+//sections
+@import "../dev-scss/sections/header";
+@import "../dev-scss/sections/about";
+@import "../dev-scss/sections/services";
+@import "../dev-scss/sections/benefits";
+@import "../dev-scss/sections/works";
+
+//adaptive
+@import "../dev-scss/adaptive";
 
 //adds
+.wrapper {
+  font-family: "Poppins", sans-serif;
+}
+
+.main__bg {
+  background-image: url("@img/main-bg/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

@@ -276,7 +276,7 @@ html(class=html.classList)&attributes(html.attrs)
       if link.maskIcon.href !== null
         link(rel="mask-icon" href!=link.maskIcon.href color=link.maskIcon.color)
     block styles
-      link(rel="stylesheet" href=`css/main.min.css`)
+      link(rel="stylesheet" href=`css/${style}.min.css`)
     block head-end
   body(class=body.classList)&attributes(body.attrs)
     block body-start

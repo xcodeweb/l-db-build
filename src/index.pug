@@ -2,6 +2,7 @@ extends dev-pug/head
 
 prepend vars
   - title = "DB"
+  - style = "main"
 
 append vars
 
@@ -17,6 +18,7 @@ block content
       include ./dev-pug/sections/services
       include ./dev-pug/sections/benefits
       .main__bg
+        include ./dev-pug/sections/works
 
 
     include dev-pug/sections/footer
