@@ -1,0 +1,42 @@
+@media (max-width:1388px) {
+  // Benefits
+  .benefits {
+    &__inner {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+  // End Benefits
+}
+
+@media (max-width: 1024px) {
+  // Services
+  .services {
+    &__inner {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+  //End Services
+}
+
+@media (max-width: 864px) {
+  // About
+  .about {
+    &__inner {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &__photos {
+      margin-bottom: 25px;
+    }
+
+    &__content > * {
+      margin-left: 0;
+    }
+  }
+  // End About
+}

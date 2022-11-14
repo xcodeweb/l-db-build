@@ -1,0 +1,61 @@
+.benefits {
+  padding-top: 50px;
+  &__title {
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  &__desc {
+    max-width: 348px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  //Cards loop
+  @for $i from 1 through 3 {
+    &__item:nth-child(#{$i}) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 420px;
+      height: 313px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      background-image: linear-gradient(
+          180deg,
+          rgba(5, 96, 136, 0.8) 0%,
+          rgba(2, 57, 87, 0.8) 100%
+        ),
+        url(@img/benefits/card-bg-#{$i}.jpg);
+      &:hover {
+        box-shadow: 0 0 14px rgba(2, 57, 87, 1);
+      }
+    }
+  }
+  // End Cards Loop
+
+  &__accept {
+    margin-bottom: 32px;
+  }
+
+  &__caption {
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 170%;
+    color: $c-default;
+  }
+
+  &__descr {
+    max-width: 300px;
+    text-align: center;
+    color: $c-default;
+  }
+}
