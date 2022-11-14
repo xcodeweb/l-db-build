@@ -12,6 +12,9 @@ block content
   .wrapper
     include dev-pug/sections/header
 
-    include dev-pug/pages/main
+    main.main
+      include ./dev-pug/sections/about
+      include ./dev-pug/sections/services
+      include ./dev-pug/sections/benefits
 
     include dev-pug/sections/footer
