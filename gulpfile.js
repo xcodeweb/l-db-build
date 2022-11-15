@@ -50,7 +50,7 @@ const vid = copyv;
 const resetGulp = gulp.series(resets.rh, resets.rc, resets.rjs, resets.rimg, resets.rsvg);
 const baseGulp = gulp.parallel(devindex, devstyle, scripts, images, svgSprite);
 const dev = gulp.series(resetGulp, baseGulp, gulp.parallel(overwatch, server));
-const build = gulp.series(resetGulp, baseGulp, fontsCss, resets.rsvgb, svgSpriteBuild);
+const build = gulp.series(resetGulp, baseGulp, fontcss, resets.rsvgb, svgSpriteBuild);
 
 gulp.task("default", dev);
 

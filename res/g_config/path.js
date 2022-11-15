@@ -1,7 +1,7 @@
 import * as nodePath from "path";
 const rootFolder = nodePath.basename(nodePath.resolve());
 
-const buildFolder = `./dist`;
+const buildFolder = `./docs`;
 const srcFolder = `./src`;
 
 export const path = {
@@ -14,8 +14,8 @@ export const path = {
     vid: `${buildFolder}/video`
   },
   src: {
-    html: `${srcFolder}/*.html`,
-    pug: [`${srcFolder}/*.pug`, `${srcFolder}/dev-pug/pages/**/*.pug`],
+    html: [`${srcFolder}/*.html`, `${srcFolder}/pages/*.html`],
+    pug: [`${srcFolder}/*.pug`, `${srcFolder}/pages/*.pug`],
     scss: [`${srcFolder}/css/*.scss`, `!${srcFolder}/css/fonts.scss`],
     less: `${srcFolder}/css/*.less`,
     js: `${srcFolder}/js/app.js`,

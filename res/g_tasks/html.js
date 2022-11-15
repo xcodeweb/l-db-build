@@ -41,7 +41,8 @@ export const mpug = () => {
     .pipe(
       pug({
         pretty: true,
-        verbose: true
+        verbose: true,
+        basedir: "src"
       })
     )
     .pipe(app.plugins.replace(/@img\//g, "img/"))

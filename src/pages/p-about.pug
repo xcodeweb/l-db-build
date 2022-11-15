@@ -1,8 +1,8 @@
 extends /dev-pug/head
 
 prepend vars
-  - title = "DB"
-  - style = "main"
+  - title = "About DB-"
+  - style = "about"
 
 
 append vars
@@ -20,12 +20,5 @@ block content
     include /dev-pug/sections/header
 
     main.main
-      include /dev-pug/sections/about
-      include /dev-pug/sections/services
-      include /dev-pug/sections/benefits
-      .main__bg
-        include /dev-pug/sections/works
-        include /dev-pug/sections/reviews
-      include /dev-pug/sections/subscribe
 
     include /dev-pug/sections/footer
