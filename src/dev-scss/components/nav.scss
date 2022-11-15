@@ -19,4 +19,40 @@
     font-weight: 500;
     color: $c-default;
   }
+
+  &__burger {
+    display: none;
+    height: 40px;
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 5px;
+  }
+
+  &__burger-span {
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 2px;
+    cursor: pointer;
+    background-color: white;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 1px;
+      background-color: white;
+    }
+
+    &::before {
+      top: -8px;
+      left: 0;
+    }
+
+    &::after {
+      top: 8px;
+      left: 0;
+    }
+  }
 }

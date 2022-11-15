@@ -11,6 +11,21 @@
 }
 
 @media (max-width: 1024px) {
+  // Header
+  .header {
+    &__image {
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }
+    &__img {
+      height: 100%;
+      opacity: 0.3;
+    }
+  }
+  // End Header
+
   // Services
   .services {
     &__inner {
@@ -20,6 +35,41 @@
     }
   }
   //End Services
+}
+
+@media (max-width: 920px) {
+  // Header
+  .nav {
+    &__list {
+      position: absolute;
+      display: block;
+      top: -15px;
+      left: 100px;
+      padding: 30px;
+      border-radius: 15px;
+      background-color: #000;
+      transition: all 0.3s ease;
+    }
+
+    .nav__list.nav__list--active {
+      position: absolute;
+      display: block;
+      top: -15px;
+      left: -80px;
+      padding: 30px;
+      opacity: 0.9;
+      border-radius: 15px;
+      background-color: #000;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  .nav__burger {
+    display: block;
+  }
+  // End Header
 }
 
 @media (max-width: 864px) {
@@ -77,6 +127,16 @@
     }
   }
   // End Footer
+}
+
+@media (max-width: 450px) {
+  // Header
+  .header {
+    &__title {
+      font-size: 33px;
+    }
+  }
+  // End Header
 }
 
 @media (max-width: 360px) {
