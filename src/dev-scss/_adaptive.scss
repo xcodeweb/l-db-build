@@ -63,6 +63,20 @@
     }
   }
   // End Reviews
+
+  // Footer
+  .footer {
+    &__inner {
+      justify-content: center;
+    }
+    &__item:nth-child(1) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 100%;
+    }
+  }
+  // End Footer
 }
 
 @media (max-width: 360px) {

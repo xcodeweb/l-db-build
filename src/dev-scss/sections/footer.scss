@@ -1,0 +1,36 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: $c-blue-dark;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 35px;
+  }
+
+  &__logo {
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    max-width: 192px;
+    margin-bottom: 32px;
+    color: $c-default;
+  }
+
+  &__caption {
+    display: block;
+    margin-bottom: 32px;
+    color: $c-default;
+  }
+
+  &__list {
+    color: $c-default;
+  }
+
+  &__element:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
