@@ -1,0 +1,27 @@
+.header-alt {
+  padding-top: 30px;
+  padding-bottom: 100px;
+  background-image: url("@img/header-alt/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    max-width: 656px;
+    text-align: center;
+    color: $c-default;
+  }
+}
