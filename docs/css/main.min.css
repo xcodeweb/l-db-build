@@ -212,6 +212,10 @@ h2.title,
   text-align: center;
 }
 
+.nav {
+  position: relative;
+  z-index: 2;
+}
 .nav__list {
   display: flex;
   justify-content: flex-end;
@@ -304,10 +308,6 @@ h2.title,
 }
 .header__logo {
   margin-left: 15px;
-}
-.header__nav {
-  position: relative;
-  z-index: 2;
 }
 .header__content {
   position: relative;

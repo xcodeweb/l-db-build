@@ -4,5 +4,18 @@
 
   &__inner {
     display: flex;
+
+    & > * {
+      flex-basis: 50%;
+    }
+  }
+
+  &__title {
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+
+  &__text:not(:last-child) {
+    margin-bottom: 32px;
   }
 }
