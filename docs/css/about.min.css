@@ -338,6 +338,7 @@ h2.title,
   background-image: url("../img/banner/bg.jpg"); }
 
 .banner {
+  margin-bottom: 80px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -349,8 +350,25 @@ h2.title,
 .banner__inner > * {
   flex-basis: 50%;
 }
+.banner__image {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .banner__image img {
   min-width: 100%;
+}
+.banner__title.title {
+  margin-top: 55px;
+  margin-bottom: 16px;
+  color: #fff;
+}
+.banner__title.title span {
+  font-style: italic;
+  font-size: 32px;
+}
+.banner__text {
+  max-width: 510px;
+  color: #fff;
 }
 
 .footer {
@@ -406,6 +424,14 @@ h2.title,
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+  }
+  .story__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner__inner {
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media (max-width: 920px) {
