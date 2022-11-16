@@ -1,17 +1,17 @@
 extends /dev-pug/head
 
 prepend vars
-  - title = "Our services"
-  - style = "services"
+  - title = "Gallery"
+  - style = "gallery"
   //- header-alt title text
-  - titleText = "Our team services"
+  - titleText = "Here some our best works"
 
 
 append vars
   -
     var body = {
       attrs: {},
-      classList: ["body", "p-services"]
+      classList: ["body", "p-gallery"]
     }
 
 append styles
@@ -22,8 +22,7 @@ block content
 
     include /dev-pug/sections/header-alt
 
-    main.services-main
-      include /dev-pug/sections/services
-      include /dev-pug/sections/design
+    main.gallery-main
+      include /dev-pug/sections/cards
 
     include /dev-pug/sections/footer

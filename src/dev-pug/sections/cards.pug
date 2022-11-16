@@ -1,0 +1,43 @@
+-
+  const cards = [
+    {
+      image: "@img/cards/img-0.jpg",
+      title: "Interior design",
+      text: "3 Months work time"
+    },
+    {
+      image: "@img/cards/img-1.jpg",
+      title: "Build modern house",
+      text: "3 Months work time"
+    },
+    {
+      image: "@img/cards/img-2.jpg",
+      title: "Build villa two floors",
+      text: "3 Months work time"
+    },
+    {
+      image: "@img/cards/img-3.jpg",
+      title: "Modern interior design",
+      text: "3 Months work time"
+    },
+    {
+      image: "@img/cards/img-4.jpg",
+      title: "Renovation co working room",
+      text: "3 Months work time"
+    },
+    {
+      image: "@img/cards/img-5.jpg",
+      title: "Real estate house",
+      text: "3 Months work time"
+    }
+  ]
+
+section.cards
+  .cards__container.container
+    .cards__inner
+      each card in cards
+        .cards__card
+          img(src= card.image, alt="")
+          h2.cards__title.title= card.title
+          p.cards__text.text= card.text
+          button.cards__button.button See process

@@ -316,59 +316,31 @@ h2.title,
   color: #fff;
 }
 
-.story {
+.cards__inner {
+  display: flex;
+  justify-content: center;
+  gap: 50px 20px;
+  flex-wrap: wrap;
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.story__inner {
-  display: flex;
+.cards__card {
+  box-shadow: 0 8px 30px rgba(2, 57, 87, 0.15);
 }
-.story__inner > * {
-  flex-basis: 50%;
+.cards__card img {
+  margin-bottom: 30px;
 }
-.story__title {
-  margin-top: 24px;
+.cards__card h2.title {
   margin-bottom: 16px;
+  margin-left: 30px;
 }
-.story__text:not(:last-child) {
+.cards__card .cards__text {
   margin-bottom: 32px;
+  margin-left: 30px;
 }
-
-.no-webp .banner {
-  background-image: url("../img/banner/bg.jpg"); }
-
-.banner {
-  margin-bottom: 80px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.banner__inner {
-  display: flex;
-  justify-content: space-between;
-}
-.banner__inner > * {
-  flex-basis: 50%;
-}
-.banner__image {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.banner__image img {
-  min-width: 100%;
-}
-.banner__title.title {
-  margin-top: 55px;
-  margin-bottom: 16px;
-  color: #fff;
-}
-.banner__title.title span {
-  font-style: italic;
-  font-size: 32px;
-}
-.banner__text {
-  max-width: 510px;
-  color: #fff;
+.cards__card button {
+  margin-bottom: 22px;
+  margin-left: 30px;
 }
 
 .footer {
@@ -535,7 +507,6 @@ h2.title,
   font-family: "Poppins", sans-serif;
 }
 .webp .header-alt { background-image: url(../img/header-alt/bg.webp); }
-.webp .banner { background-image: url(../img/banner/bg.webp); }
 @media (max-width: 864px) {
 
   .webp .design__inner { background-image: url(../img/design/bg.webp); }

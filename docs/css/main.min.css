@@ -796,6 +796,9 @@ h2.title,
   .design__inner > * {
     flex-basis: auto;
   }
+  .design__inner:nth-child(2) {
+    background-size: cover;
+  }
   .design__image {
     display: none;
   }
