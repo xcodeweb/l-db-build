@@ -473,6 +473,22 @@ h2.title,
   .about__content > * {
     margin-left: 0;
   }
+  .no-webp .design__inner {
+    background-image: url("../img/design/bg.jpg"); }
+  .design__inner {
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+  }
+  .design__inner > * {
+    flex-basis: auto;
+  }
+  .design__image {
+    display: none;
+  }
+  .design__text {
+    text-align: center;
+  }
 }
 @media (max-width: 760px) {
   .reviews__inner {
@@ -515,18 +531,9 @@ h2.title,
 .wrapper {
   font-family: "Poppins", sans-serif;
 }
-
-.no-webp .main__bg {
-  background-image: url("../img/main-bg/bg.jpg"); }
-
-.main__bg {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 .webp .header-alt { background-image: url(../img/header-alt/bg.webp); }
-
 .webp .banner { background-image: url(../img/banner/bg.webp); }
+@media (max-width: 864px) {
 
-.webp .main__bg { background-image: url(../img/main-bg/bg.webp); }
+  .webp .design__inner { background-image: url(../img/design/bg.webp); }
+}

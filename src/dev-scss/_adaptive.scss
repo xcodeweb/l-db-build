@@ -107,6 +107,28 @@
     }
   }
   // End About
+
+  // Design
+  .design {
+    &__inner {
+      justify-content: center;
+      background-image: url("@img/design/bg.jpg");
+      background-size: cover;
+      background-position: center;
+      & > * {
+        flex-basis: auto;
+      }
+    }
+
+    &__image {
+      display: none;
+    }
+
+    &__text {
+      text-align: center;
+    }
+  }
+  // End Design
 }
 
 @media (max-width: 760px) {
