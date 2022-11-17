@@ -1,0 +1,28 @@
+extends /dev-pug/head
+
+prepend vars
+  - title = "Careers"
+  - style = "careers"
+  //- header-alt title text
+  - titleText = "Have a briliant idea? Join with us. We have an oppurtunity for you"
+
+
+append vars
+  -
+    var body = {
+      attrs: {},
+      classList: ["body", "p-careers"]
+    }
+
+append styles
+  link(rel="stylesheet" href="css/fonts.min.css")
+
+block content
+  .wrapper
+
+    include /dev-pug/sections/header-alt
+
+    main.main 1
+      include /dev-pug/sections/jobs
+
+    include /dev-pug/sections/footer

@@ -1,0 +1,69 @@
+-
+  const jobs = [
+    {
+      title: "Senior architect",
+      text: "Full-time",
+      experience: "6+ years",
+      salary: "6000$+"
+    },
+    {
+      title: "Head of constructions",
+      text: "Full-time",
+      experience: "6+ years",
+      salary: "6000$+"
+    },
+    {
+      title: "Drafter",
+      text: "Full-time",
+      experience: "6+ years",
+      salary: "6000$+"
+    },
+    {
+      title: "UI/UX Designer",
+      text: "Full-time",
+      experience: "6+ years",
+      salary: "6000$+"
+    },
+    {
+      title: "Driver",
+      text: "Full-time",
+      experience: "6+ years",
+      salary: "6000$+"
+    },
+    {
+      title: "Designer",
+      text: "Full-time",
+      experience: "6+ years",
+      salary: "6000$+"
+    },
+    {
+      title: "Web developer",
+      text: "Full-time",
+      experience: "6+ years",
+      salary: "6000$+"
+    },
+    {
+      title: "Interior designer",
+      text: "Full-time",
+      experience: "6+ years",
+      salary: "6000$+"
+    },
+    {
+      title: "Financial Expert",
+      text: "Full-time",
+      experience: "6+ years",
+      salary: "6000$+"
+    }
+  ]
+
+section.jobs
+  .jobs__container.container
+    .jobs__inner
+      each card in jobs
+        .jobs__card
+          h2.jobs__title.title= card.title
+          p.jobs__time.text= card.text
+          p.jobs__exp.text= card.experience
+          p.jobs__salary.text= card.salary
+          button.jobs__button.button See process
+      
