@@ -10,6 +10,34 @@
   // End Benefits
 }
 
+@media (max-width: 1190px) {
+  // Form
+  .form {
+    &__content {
+      padding-top: 10px;
+    }
+
+    &__title {
+      margin-bottom: 0;
+      font-size: 18px;
+    }
+
+    &__form {
+      .form__inputs {
+        flex-direction: column;
+        input:not(:last-child) {
+          margin-bottom: 10px;
+        }
+      }
+      .form__textarea {
+        height: 110px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  // End Form
+}
+
 @media (max-width: 1024px) {
   // Header
   .header {
@@ -88,6 +116,34 @@
     display: block;
   }
   // End Header
+
+  // Form
+  .form {
+    &__inner {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &__image {
+      img {
+        margin: 0 auto;
+      }
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__form {
+      margin-bottom: 25px;
+      input {
+        &:not(:last-child) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  // End Form
 }
 
 @media (max-width: 864px) {
@@ -185,6 +241,21 @@
     }
   }
   // End Header
+
+  // Form
+  .form {
+    &__title {
+      font-size: 42px;
+    }
+
+    &__form {
+      align-items: center;
+      input::placeholder {
+        font-size: 10px;
+      }
+    }
+  }
+  // End Form
 }
 
 @media (max-width: 360px) {
@@ -195,4 +266,5 @@
       bottom: -170px;
     }
   }
+  // End Reviews
 }

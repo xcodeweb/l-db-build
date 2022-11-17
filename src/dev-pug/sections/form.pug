@@ -1,0 +1,14 @@
+section.form
+  .form__container.container
+    .form__inner
+      .form__image
+        img(src="@img/form/image.jpg" alt="Form image")
+      .form__content
+        h2.form__title.title Let’s talk about anything you need
+        form.form__form(action="")
+          fieldset.form__inputs
+            input.form__input(type="text" name="name" placeholder="Your name/company name")
+            input.form__input(type="text" name="phone" placeholder="Phone/E-mail")
+          textarea.form__textarea(name="message" placeholder="Message")
+          button.form__button.button Submit
+

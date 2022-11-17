@@ -1,0 +1,28 @@
+extends /dev-pug/head
+
+prepend vars
+  - title = "Contact"
+  - style = "contact"
+  //- header-alt title text
+  - titleText = "Need some consultation or want to collaborarion with us? Let’s connect!"
+
+
+append vars
+  -
+    var body = {
+      attrs: {},
+      classList: ["body", "p-contact"]
+    }
+
+append styles
+  link(rel="stylesheet" href="css/fonts.min.css")
+
+block content
+  .wrapper
+
+    include /dev-pug/sections/header-alt
+
+    main.form-main
+      include /dev-pug/sections/form
+
+    include /dev-pug/sections/footer

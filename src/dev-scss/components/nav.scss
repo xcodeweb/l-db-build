@@ -1,7 +1,7 @@
 .nav {
   position: relative;
   z-index: 2;
-  
+
   &__list {
     display: flex;
     justify-content: flex-end;
@@ -57,5 +57,29 @@
       top: 8px;
       left: 0;
     }
+  }
+}
+
+.p-about {
+  & .nav__item[data-link="about"] {
+    display: none;
+  }
+}
+
+.p-services {
+  & .nav__item[data-link="services"] {
+    display: none;
+  }
+}
+
+.p-gallery {
+  & .nav__item[data-link="gallery"] {
+    display: none;
+  }
+}
+
+.p-contact {
+  & .nav__item[data-link="contact"] {
+    display: none;
   }
 }

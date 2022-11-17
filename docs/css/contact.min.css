@@ -332,31 +332,47 @@ h2.title,
   color: #fff;
 }
 
-.cards__inner {
+.form {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.form__inner {
   display: flex;
-  justify-content: center;
-  gap: 50px 20px;
+}
+.form__content {
+  flex-grow: 1;
+  padding-top: 44px;
+  padding-left: 40px;
+  padding-right: 34px;
+  background-color: #f5f5f5;
+}
+.form__title {
+  margin-bottom: 24px;
+}
+.form__form {
+  display: flex;
+  flex-direction: column;
+}
+.form__form .form__inputs {
+  display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-.cards__card {
-  box-shadow: 0 8px 30px rgba(2, 57, 87, 0.15);
-}
-.cards__card img {
-  margin-bottom: 30px;
-}
-.cards__card h2.title {
   margin-bottom: 16px;
-  margin-left: 30px;
 }
-.cards__card .cards__text {
-  margin-bottom: 32px;
-  margin-left: 30px;
+.form__form input {
+  flex-grow: 1;
+  max-width: 340px;
+  padding: 11px 20px;
 }
-.cards__card button {
-  margin-bottom: 22px;
-  margin-left: 30px;
+.form__form input:not(:last-child) {
+  margin-right: 15px;
+}
+.form__form textarea {
+  max-width: 696px;
+  height: 183px;
+  margin-bottom: 16px;
+  padding: 12px 20px;
+  resize: none;
 }
 
 .footer {
