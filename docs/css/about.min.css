@@ -175,9 +175,15 @@ legend {
 
 /* Grid */
 .wrapper {
+  display: flex;
+  flex-direction: column;
   min-height: 100%;
   max-height: unset;
   overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+.wrapper main {
+  flex-grow: 1;
 }
 
 .container,
@@ -590,9 +596,6 @@ h2.title,
   .reviews__review-content {
     bottom: -170px;
   }
-}
-.wrapper {
-  font-family: "Poppins", sans-serif;
 }
 .webp .header-alt { background-image: url(../img/header-alt/bg.webp); }
 .webp .banner { background-image: url(../img/banner/bg.webp); }

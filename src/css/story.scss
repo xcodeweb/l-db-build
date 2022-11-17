@@ -9,10 +9,16 @@
 
 //sections
 @import "../dev-scss/sections/header-alt";
-@import "../dev-scss/sections/form";
+@import "../dev-scss/sections/reviews";
 @import "../dev-scss/sections/footer";
 
 //adaptive
 @import "../dev-scss/adaptive";
 
 //adds
+
+.p-story {
+  & .header-alt {
+    margin-bottom: 40px;
+  }
+}

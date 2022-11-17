@@ -1,0 +1,28 @@
+extends /dev-pug/head
+
+prepend vars
+  - title = "Story"
+  - style = "story"
+  //- header-alt title text
+  - titleText = "Read some story from clients!"
+
+
+append vars
+  -
+    var body = {
+      attrs: {},
+      classList: ["body", "p-story"]
+    }
+
+append styles
+  link(rel="stylesheet" href="css/fonts.min.css")
+
+block content
+  .wrapper
+
+    include /dev-pug/sections/header-alt
+
+    main.main
+      include /dev-pug/sections/reviews
+
+    include /dev-pug/sections/footer

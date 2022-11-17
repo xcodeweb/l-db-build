@@ -338,31 +338,80 @@ h2.title,
   color: #fff;
 }
 
-.cards__inner {
+.reviews {
+  margin-bottom: 100px;
+}
+.reviews__about-home {
   display: flex;
-  justify-content: center;
-  gap: 50px 20px;
-  flex-wrap: wrap;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  flex-direction: column;
+  align-items: center;
+  max-width: 330px;
+  padding-top: 33px;
+  padding-bottom: 33px;
+  padding-left: 33px;
+  padding-right: 33px;
+  background-color: #fff;
 }
-.cards__card {
-  box-shadow: 0 8px 30px rgba(2, 57, 87, 0.15);
-}
-.cards__card img {
-  margin-bottom: 30px;
-}
-.cards__card h2.title {
+.reviews__title {
   margin-bottom: 16px;
-  margin-left: 30px;
+  text-align: center;
+  white-space: nowrap;
 }
-.cards__card .cards__text {
+.reviews__desc {
+  align-self: flex-start;
+  justify-self: left;
+  max-width: 195px;
+  margin: 0;
   margin-bottom: 32px;
-  margin-left: 30px;
+  text-align: left;
 }
-.cards__card button {
-  margin-bottom: 22px;
-  margin-left: 30px;
+.reviews__inner {
+  display: flex;
+  flex-basis: 50%;
+}
+.reviews__about-home {
+  position: relative;
+  height: 320px;
+}
+.reviews__about-home::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -25%;
+  width: 30px;
+  height: 80px;
+  background-color: #fff;
+}
+.reviews__review {
+  position: relative;
+}
+.reviews__review-content {
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+  padding: 35px;
+  max-width: 416px;
+  background: linear-gradient(1.17deg, #023957 -19.65%, #056088 93.67%);
+}
+.reviews__review-content img {
+  position: absolute;
+  top: -25%;
+  left: -12.5%;
+}
+.reviews__review-content p {
+  margin-bottom: 16px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  color: #fff;
+}
+.reviews__review-content span {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 170%;
+  color: #fff;
 }
 
 .footer {
@@ -568,6 +617,9 @@ h2.title,
   .reviews__review-content {
     bottom: -170px;
   }
+}
+.p-story .header-alt {
+  margin-bottom: 40px;
 }
 .webp .header-alt { background-image: url(../img/header-alt/bg.webp); }
 @media (max-width: 864px) {

@@ -201,9 +201,15 @@ legend {
 /* Grid */
 
 .wrapper {
+  display: flex;
+  flex-direction: column;
   min-height: $mvh;
   max-height: $mxvh;
   overflow: $wo;
+  font-family: "Poppins", sans-serif;
+  main {
+    flex-grow: 1;
+  }
 }
 
 .container,
