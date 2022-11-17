@@ -28,16 +28,8 @@ global.app = {
 };
 
 function overwatch() {
-  if (devindex == mhtml) {
-    gulp.watch(app.path.watch.html, gulp.series(resets.rh, devindex));
-  } else if (devindex == mpug) {
-    gulp.watch(app.path.watch.pug, gulp.series(resets.rh, devindex));
-  }
-  if (devstyle == scss) {
-    gulp.watch(app.path.watch.scss, gulp.series(resets.rc, devstyle));
-  } else if (devstyle == less) {
-    gulp.watch(app.path.watch.less, gulp.series(resets.rc, devstyle));
-  }
+  gulp.watch(app.path.watch[devindex.name], {delay: 800}, gulp.series(resets.rh, devindex));
+  gulp.watch(app.path.watch[devstyle.name], {delay: 800}, gulp.series(resets.rc, devstyle));
   gulp.watch(app.path.watch.js, gulp.series(resets.rjs, scripts));
   gulp.watch(app.path.watch.imgs, gulp.series(resets.rimg, images));
   gulp.watch(app.path.watch.svgs, gulp.series(resets.rsvg, svgSprite));
@@ -45,12 +37,24 @@ function overwatch() {
 }
 
 const fonts = gulp.series(copy, otfToTtf, ttfToWoff, fontsStyle);
-const fontcss = gulp.series(fontsCss)
+const fontcss = gulp.series(fontsCss);
 const vid = copyv;
-const resetGulp = gulp.series(resets.rh, resets.rc, resets.rjs, resets.rimg, resets.rsvg);
+const resetGulp = gulp.series(
+  resets.rh,
+  resets.rc,
+  resets.rjs,
+  resets.rimg,
+  resets.rsvg
+);
 const baseGulp = gulp.parallel(devindex, devstyle, scripts, images, svgSprite);
 const dev = gulp.series(resetGulp, baseGulp, gulp.parallel(overwatch, server));
-const build = gulp.series(resetGulp, baseGulp, fontcss, resets.rsvgb, svgSpriteBuild);
+const build = gulp.series(
+  resetGulp,
+  baseGulp,
+  fontcss,
+  resets.rsvgb,
+  svgSpriteBuild
+);
 
 gulp.task("default", dev);
 

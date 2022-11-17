@@ -26,8 +26,8 @@ export const path = {
     vid: `${srcFolder}/video/*.mp4`
   },
   watch: {
-    html: `${srcFolder}/**/*.html`,
-    pug: `${srcFolder}/**/*.pug`,
+    mhtml: `${srcFolder}/**/*.html`,
+    mpug: `${srcFolder}/**/*.pug`,
     scss: [`${srcFolder}/css/*.scss`, `${srcFolder}/dev-scss/**/*.scss`],
     less: [`${srcFolder}/css/*.less`, `${srcFolder}/dev-less/**/*.less`],
     js: `${srcFolder}/js/**/*.js`,
