@@ -1,4 +1,4 @@
-https://zcxcode.github.io/db-build/
+https://cx-code-web.github.io/db-build/
 # Верстка макета
 
 ## Стек
