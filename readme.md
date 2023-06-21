@@ -1,5 +1,6 @@
-https://cx-code-web.github.io/db-build/
-# Верстка макета
+https://xcodeweb.github.io/l-db-build
+
+# Верстка
 
 ## Стек
 
